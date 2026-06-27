@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Chamber Records | Releases & Catalogue</title>
+  <meta name="description" content="Browse the full discography of Echo Chamber Records. Explore indie, dreamwave, rock and alternative LPs, limited-edition vinyl records, and digital singles.">
+  <meta name="keywords" content="vinyl releases, cassette tapes, indie discography, alternative albums, record store">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <script src="assets/js/rtl-toggle.js"></script>
+</head>
+<body>
+
+  <!-- Sticky Header & Navbar -->
+  <header class="custom-navbar py-3">
+    <div class="container-fluid px-4 px-md-5">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0 justify-content-between">
+        <a class="navbar-brand m-0" href="index.html">ECHO CHAMBER</a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item nav-link-dropdown">
+              <a class="nav-link" href="#">Home</a>
+              <ul class="nav-dropdown-menu">
+                <li><a href="index.html">Editorial Home</a></li>
+                <li><a href="home-2.html">Modular Grid Home</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="artists.html">Artists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="releases.html">Releases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sync-licensing.html">Sync Licensing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="music-submission.html">Submissions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- Mobile Actions -->
+          <div class="d-flex d-lg-none align-items-center justify-content-center gap-3 my-3 pt-3 border-top border-dark mobile-navbar-actions">
+            <button class="theme-toggle-btn" aria-label="Toggle dark/light theme"></button>
+            <button class="rtl-toggle-btn" aria-label="Toggle right-to-left layout">RTL</button>
+            <a href="signup.html" class="btn-editorial btn-accent py-2 px-3 text-white border-0">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <button class="theme-toggle-btn" aria-label="Toggle dark/light theme"></button>
+          <button class="rtl-toggle-btn" aria-label="Toggle right-to-left layout">RTL</button>
+          <a href="signup.html" class="btn-editorial btn-accent py-2 px-3 text-white border-0">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="py-5 page-header-hero">
+    <div class="container py-5 px-4 px-md-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <span class="text-accent text-uppercase font-headings fw-bold d-block mb-3">Our Music Catalogue</span>
+          <h1 class="font-display display-3 text-white m-0" style="line-height: 0.9;">ALBUMS & RELEASES</h1>
+          <p class="text-white-50 mt-3 font-headings fs-5">A carefully manufactured physical and digital collection of noise, silence, and everything in between.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Releases Catalogue Grid Section -->
+  <section class="py-5 scroll-reveal-section">
+    <div class="container py-4 px-4 px-md-5">
+      <!-- Filters -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+        <button class="btn-editorial btn-accent active filter-btn" data-filter="all">All Formats</button>
+        <button class="btn-editorial filter-btn" data-filter="vinyl">Vinyl LP</button>
+        <button class="btn-editorial filter-btn" data-filter="cassette">Cassette Tapes</button>
+        <button class="btn-editorial filter-btn" data-filter="digital">Digital Singles / EPs</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="row g-4">
+        <!-- Release 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="vinyl">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-1.jpg" class="release-img" alt="Amnesia Sky cover art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View LP Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Amnesia Sky</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Silent Satellites • Splatter LP</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$28.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Release 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="cassette">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-2.jpg" class="release-img" alt="Velvet Noise cover art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View Tape Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Velvet Noise</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Lizard Soul • Cassette Edition</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$12.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Release 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="vinyl">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-3.jpg" class="release-img" alt="Neon Dreamscape cover art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View LP Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Neon Dreamscape</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Tokyo Neon Collective • 2LP Vinyl</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$32.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Release 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="vinyl">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-4.jpg" class="release-img" alt="Electric Static cover art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View LP Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Electric Static</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Glass Mirrors • Gatefold Black LP</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$25.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Release 5 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="digital">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-5.jpg" class="release-img" alt="Lost Orbit single art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View Single Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Lost Orbit</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Silent Satellites • Digital EP</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$4.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Release 6 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="digital">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-6.jpg" class="release-img" alt="Infinite Loop single art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View Single Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Infinite Loop</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Tokyo Neon Collective • Digital Single</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$1.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Release 7 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="vinyl">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-7.jpg" class="release-img" alt="Static Echoes cover art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View LP Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Static Echoes</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Glass Mirrors • Clear 12" Vinyl</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$27.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Release 8 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 scroll-reveal-card" data-category="cassette">
+          <div class="release-card h-100 d-flex flex-column justify-content-between">
+            <div class="release-img-wrap">
+              <img src="assets/images/releases/release-8.jpg" class="release-img" alt="Midnight Noise cover art">
+              <div class="release-overlay">
+                <a href="release-details.html" class="btn-editorial btn-accent border-0 text-white w-100 text-center">View Tape Details</a>
+              </div>
+            </div>
+            <div class="p-3 bg-surface border-top border-dark">
+              <h3 class="font-headings fs-6 fw-bold mb-1"><a href="release-details.html" class="text-white">Midnight Noise</a></h3>
+              <p class="text-white-50 font-headings mb-0" style="font-size:0.85rem;">Lizard Soul • Limited Chrome Tape</p>
+              <div class="mt-2 text-highlight fw-bold font-headings">$11.50</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Vault Subscription Club -->
+  <section class="py-5 bg-dark text-white border-top border-bottom border-dark scroll-reveal-section">
+    <div class="container py-5 px-4 px-md-5">
+      <div class="row align-items-center justify-content-between g-5">
+        <div class="col-lg-5 scroll-reveal-card">
+          <span class="text-accent text-uppercase font-headings fw-bold d-block mb-2">Exclusive Club</span>
+          <h2 class="font-display text-uppercase mb-4" style="font-size: 3rem; line-height: 0.95;">Join The Vault Subscription</h2>
+          <p class="font-headings text-white-50 mb-4 pe-lg-3">Get our limited-edition physical pressings delivered straight to your doorstep before they launch in shops. The Vault subscription guarantees access to rare colorways, signed inserts, and exclusive test pressings.</p>
+          
+          <ul class="list-unstyled p-0 m-0 font-headings mb-5 d-flex flex-column gap-3 fs-8">
+            <li class="d-flex align-items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-accent)" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+              <span>4 Exclusive Splatter Vinyl LPs per Year</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-accent)" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+              <span>Hand-Numbered Cassette Tape Add-ons Available</span>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-accent)" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+              <span>Private Roster Show Tickets & Pre-sales access</span>
+            </li>
+          </ul>
+          
+          <a href="signup.html" class="btn-editorial btn-accent border-0 text-white px-5 py-3">Subscribe to The Vault</a>
+        </div>
+        <div class="col-lg-6 scroll-reveal-card">
+          <div class="position-relative border border-dark overflow-hidden bg-surface p-4 p-md-5">
+            <h3 class="font-display fs-2 text-uppercase mb-4 text-highlight">The Vinyl Box Spec</h3>
+            <div class="table-responsive font-headings fs-8">
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <tr>
+                    <td class="fw-bold">Weight Class</td>
+                    <td>180g Audiophile Heavyweight Virgin Wax</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Packaging</td>
+                    <td>Heavyweight gatefold, matte finish, lyric booklet</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Shipping</td>
+                    <td>Custom reinforced mailers with double cardboard stiffeners</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">Extras</td>
+                    <td>Exclusive artist-designed sticker sheets, print inserts</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manufacturing Ethos -->
+  <section class="py-5 scroll-reveal-section">
+    <div class="container py-5 px-4 px-md-5">
+      <div class="row mb-5 text-center">
+        <div class="col-12">
+          <span class="text-accent text-uppercase font-headings fw-bold d-block mb-2">Tactile Philosophy</span>
+          <h2 class="font-display text-uppercase" style="font-size: 3rem;">Tactile Formats & Manufacturing Ethos</h2>
+        </div>
+      </div>
+      <div class="row g-4 font-headings">
+        <div class="col-md-4 scroll-reveal-card">
+          <div class="border p-4 bg-surface h-100 d-flex flex-column justify-content-between" style="border-color: var(--color-border) !important;">
+            <div>
+              <span class="text-highlight fw-bold text-uppercase d-block mb-3 fs-7">180g Virgin Wax</span>
+              <p class="text-secondary fs-8 mb-0">We manufacture our records exclusively on audiophile-grade 180g heavy virgin vinyl to reduce sound distortion and prevent warping over time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 scroll-reveal-card">
+          <div class="border p-4 bg-surface h-100 d-flex flex-column justify-content-between" style="border-color: var(--color-border) !important;">
+            <div>
+              <span class="text-highlight fw-bold text-uppercase d-block mb-3 fs-7">Chrome Audio Tapes</span>
+              <p class="text-secondary fs-8 mb-0">Our cassette runs use high-bias chrome formulations (Type II) housed in custom tinted library cases, providing warm magnetic frequency response.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 scroll-reveal-card">
+          <div class="border p-4 bg-surface h-100 d-flex flex-column justify-content-between" style="border-color: var(--color-border) !important;">
+            <div>
+              <span class="text-highlight fw-bold text-uppercase d-block mb-3 fs-7">FSC Certified Sleeves</span>
+              <p class="text-secondary fs-8 mb-0">Environmental sustainability matters. All jackets, liners, and lyric sheets use FSC-certified recycled paper printed with organic soy-based inks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Footer -->
+  <footer class="custom-footer text-white bg-black">
+    <div class="container px-4 px-md-5">
+      <div class="row g-5">
+        <!-- Col 1 -->
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-logo text-white d-block mb-3">ECHO CHAMBER</a>
+          <p class="text-white-50 mb-4 pe-lg-4">An independent collective dedicated to pushing the boundaries of alternative sound and editorial storytelling since 2018. We believe in tactile formats, noisy guitars, and creative B2B sync partnerships.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Bandcamp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M2.5 13h11a.5.5 0 0 0 .5-.5V8.04l-3-4H2a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Spotify"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.917 3.917 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading text-white">Roster</h4>
+          <ul class="footer-links">
+            <li><a href="artists.html">All Artists</a></li>
+            <li><a href="releases.html">New Releases</a></li>
+            <li><a href="releases.html">Physical Catalog</a></li>
+            <li><a href="releases.html">Cassette Vault</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading text-white">Licensing</h4>
+          <ul class="footer-links">
+            <li><a href="sync-licensing.html">Sync Services</a></li>
+            <li><a href="licensing-details.html">Playlists / Moods</a></li>
+            <li><a href="music-submission.html">Artist Submission</a></li>
+            <li><a href="contact.html">General Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-4">
+          <h4 class="footer-heading text-white">Contact & Press</h4>
+          <p class="text-white-50 mb-3" style="font-size:0.9rem;">For press inquiries, print assets, or interviewer requests: <br>
+          <a href="mailto:press@echochamber.com" class="text-accent">press@echochamber.com</a></p>
+          <p class="text-white-50" style="font-size:0.9rem;">Music submissions only accepted through our portal: <br>
+          <a href="music-submission.html" class="btn-editorial btn-accent py-2 px-3 border-0 text-white mt-2 d-inline-block">Submit Music</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="m-0">&copy; 2026 Echo Chamber Records. All Rights Reserved. Manufactured by Independent Union Distribution.</p>
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <a href="contact.html" class="text-white-50">London</a>
+          <a href="contact.html" class="text-white-50">Brooklyn</a>
+          <a href="contact.html" class="text-white-50">Tokyo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP Animation Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>

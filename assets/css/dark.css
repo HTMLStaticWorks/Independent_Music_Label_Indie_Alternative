@@ -1,0 +1,52 @@
+/* Dark Mode Specific Overrides and Enhancements */
+
+[data-theme="dark"] {
+  --color-bg: #030712;
+  --color-surface: #111827;
+  --color-glass: rgba(255, 255, 255, 0.06);
+  --color-glass-border: rgba(255, 255, 255, 0.10);
+  --color-accent: #E879F9;
+  --color-highlight: #FB923C;
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #CBD5E1;
+  --color-border: #1F2937;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+/* Enhancing contrast for dark mode */
+[data-theme="dark"] .glass-card {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+}
+
+[data-theme="dark"] .custom-navbar {
+  background-color: rgba(3, 7, 18, 0.85);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .nav-dropdown-menu {
+  background-color: var(--color-surface);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .btn-editorial:hover {
+  color: #030712;
+}
+
+[data-theme="dark"] .social-link {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+[data-theme="dark"] .social-link:hover {
+  background-color: rgba(232, 121, 249, 0.08);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #6B7280;
+}
