@@ -5,7 +5,7 @@
   --color-primary: #111827;
   --color-secondary: #374151;
   --color-accent: #D946EF;
-  --color-highlight: #F97316;
+  --color-highlight: #C2410C;
   --color-bg: #FFFFFF;
   --color-surface: #FFFFFF;
   --color-glass: rgba(255, 255, 255, 0.4);
@@ -797,6 +797,17 @@ iframe {
   margin-right: auto !important;
 }
 
+.min-height-500 {
+  min-height: 500px;
+}
+
+@media (max-width: 991.98px) {
+  .min-height-500 {
+    min-height: 400px;
+  }
+}
+
+
 /* Home 1 and Sync Hero center overrides */
 .hero-parallax-wrap .row {
   justify-content: center !important;
@@ -832,6 +843,17 @@ iframe {
   background-color: var(--color-surface) !important;
   color: var(--color-text-primary) !important;
 }
+
+[data-theme="light"] .bg-dark .text-white,
+[data-theme="light"] [class*="bg-dark"] .text-white {
+  color: var(--color-text-primary) !important;
+}
+
+[data-theme="light"] .bg-dark .text-white-50,
+[data-theme="light"] [class*="bg-dark"] .text-white-50 {
+  color: var(--color-text-secondary) !important;
+}
+
 
 /* RTL Toggle Button (matching theme-toggle-btn style) */
 .rtl-toggle-btn {
@@ -996,4 +1018,87 @@ body, p, li, span, label, input, select, textarea, .form-control {
 [data-theme="light"] .mobile-navbar-actions {
   border-top-color: var(--color-border) !important;
 }
+
+/* Light mode overrides for permanently dark (bg-black) sections */
+[data-theme="light"] .bg-black h1,
+[data-theme="light"] .bg-black h2,
+[data-theme="light"] .bg-black h3,
+[data-theme="light"] .bg-black h4,
+[data-theme="light"] .bg-black h5,
+[data-theme="light"] .bg-black h6 {
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .bg-black .glass-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+}
+
+[data-theme="light"] .bg-black .glass-card .text-white {
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .bg-black .glass-card .text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[data-theme="light"] .bg-black .audio-player-container {
+  background-color: #111827 !important;
+  color: #F9FAFB !important;
+  border-color: #1F2937 !important;
+}
+
+[data-theme="light"] .bg-black .audio-player-container .text-white,
+[data-theme="light"] .bg-black .audio-player-container .font-headings.fw-bold {
+  color: #F9FAFB !important;
+}
+
+[data-theme="light"] .bg-black .audio-player-container .text-white-50,
+[data-theme="light"] .bg-black .audio-player-container .track-time {
+  color: #CBD5E1 !important;
+}
+
+[data-theme="light"] .bg-black .audio-player-container .play-pause-btn {
+  border-color: #F9FAFB !important;
+  color: #F9FAFB !important;
+}
+
+[data-theme="light"] .bg-black .audio-player-container .play-pause-btn:hover {
+  background-color: #F9FAFB !important;
+  color: #030712 !important;
+}
+
+[data-theme="light"] .bg-black .btn-editorial:not(.btn-accent) {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+[data-theme="light"] .bg-black .btn-editorial:not(.btn-accent):hover {
+  background-color: #FFFFFF !important;
+  color: #030712 !important;
+  border-color: #FFFFFF !important;
+}
+
+/* Restore standard styling for light elements nested inside bg-black */
+[data-theme="light"] .bg-black .bg-surface h1,
+[data-theme="light"] .bg-black .bg-surface h2,
+[data-theme="light"] .bg-black .bg-surface h3,
+[data-theme="light"] .bg-black .bg-surface h4,
+[data-theme="light"] .bg-black .bg-surface h5,
+[data-theme="light"] .bg-black .bg-surface h6 {
+  color: var(--color-text-primary) !important;
+}
+
+[data-theme="light"] .bg-black .bg-surface .btn-editorial:not(.btn-accent) {
+  color: var(--color-text-primary) !important;
+  border-color: var(--color-text-primary) !important;
+}
+
+[data-theme="light"] .bg-black .bg-surface .btn-editorial:not(.btn-accent):hover {
+  background-color: var(--color-text-primary) !important;
+  color: var(--color-bg) !important;
+  border-color: var(--color-text-primary) !important;
+}
+
+
 
