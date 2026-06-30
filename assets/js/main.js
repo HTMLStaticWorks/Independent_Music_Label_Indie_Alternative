@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Lazy loading setup
   setupLazyLoading();
+
+  // Back to top button setup
+  setupBackToTop();
 });
 
 /**
@@ -221,4 +224,38 @@ function setupLazyLoading() {
     });
     images.forEach(img => imageObserver.observe(img));
   }
+}
+
+/**
+ * Dynamically create and setup the Back to Top button
+ */
+function setupBackToTop() {
+  const backToTopBtn = document.createElement('button');
+  backToTopBtn.id = 'back-to-top';
+  backToTopBtn.className = 'back-to-top-btn';
+  backToTopBtn.setAttribute('aria-label', 'Back to top');
+  
+  // Upward chevron SVG
+  backToTopBtn.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  `;
+  
+  document.body.appendChild(backToTopBtn);
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  });
+  
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
